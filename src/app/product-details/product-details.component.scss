@@ -1,0 +1,36 @@
+.product-details-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .product-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(99, 89, 89, 0.1);
+  }
+  
+  .product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .product-details {
+    padding: 10px;
+  }
+  
+  .product-name {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .product-price {
+    color: #0c0d0d; 
+  }
+  
+  .product-description {
+    margin-top: 10px;
+    color: #666;
+  }

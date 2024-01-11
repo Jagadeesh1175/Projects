@@ -1,0 +1,14 @@
+<!-- src/app/product-details/product-details.component.html -->
+<div *ngIf="product" class="product-details-container">
+    <h2>Product Details</h2>
+    <div class="product-card">
+      <img [src]="product.productImageUrl" alt="Product Image" class="product-image" />
+      <div class="product-details">
+        <p class="product-name">{{ product.productShortName }}</p>
+        <p class="product-price">Price:  {{ product.productPrice }}</p>
+        <p class="product-description">{{ product.productDescription }}</p>
+      </div>
+    </div>
+  </div>
+  
+  

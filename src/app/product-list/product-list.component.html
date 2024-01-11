@@ -1,0 +1,18 @@
+<!-- src/app/product-list/product-list.component.html -->
+<div class="container">
+    <div class="live-search ">
+        <input type="text" placeholder="🔍 Search your Fav Gadget" [(ngModel)]="searchQuery" />
+        <button (click)="search()">Search</button>
+    </div>
+  
+    <div *ngFor="let product of products" (click)="onProductClick(product)">
+      <div class="product-card">
+        <img [src]="product.productImageUrl" alt="Product Image" />
+        <div class="product-details">
+          <p>{{ product.productShortName }}</p>
+          <p>Rs:{{ product.productPrice }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
